@@ -1,5 +1,11 @@
 <?php
 // Creado: MarcoM 20190218
+
+/* This sample is part of the final stage of document signing and is in charge of digitally signing a document,
+obtaining a certificate from an oficial entity, generating deliverables and finally, sending a download link
+to the involved parties. Alternatively, it creates a copy of the original document that includes visual representations
+of signatures, which serves as a preview  */
+
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
@@ -274,4 +280,3 @@ class DocumentoSign extends Command
     } else $this->info('ui.documento.messages.fail.sign.wrong-status');
   }
 }
-

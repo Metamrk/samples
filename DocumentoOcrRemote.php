@@ -1,5 +1,11 @@
 <?php
 // Creado: MarcoM 20220205
+
+/* This sample is in charge of obtaining extracted content from a remote server for documents in a local database,
+then stores the content in the local database.
+If no content can be obtained from the remote server, it sends batches of files for it to process them.
+It also performs an API request to update information at a third party's database */
+
 namespace App\Console\Commands;
 
 use Symfony\Component\Process\Process;
@@ -133,4 +139,3 @@ class ConservacionOcrRemote extends Command
     }
   }
 }
-

@@ -1,5 +1,11 @@
 <?php
 // Creado: MarcoM 20230402
+
+/* The purpose of this sample is to generate a backup archive for clients whose service is about to be terminated.
+Execution without the 'apply' option sets a property to identify them in the database for review before elimination.
+The 'apply' option performs a cascade delete of the marked records.
+*/
+
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
@@ -186,4 +192,3 @@ class Offboarding extends Command
     } else return $file;
   }
 }
-

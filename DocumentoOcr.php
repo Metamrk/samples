@@ -1,6 +1,10 @@
 <?php
 // Creado: MarcoM 20220127
 
+/* This sample gets executed via a cron job, and its purpose is to extract content from digital documents and
+store it in a database. It reads a text PDF using the \Spatie\PdfToText\Pdf library, or \Spatie\PdfToImage\Pdf  
+in case it contains scanned images */
+
 namespace App\Console\Commands;
 
 use Symfony\Component\Process\Process;
@@ -105,4 +109,3 @@ class DocumentoOcr extends Command
     }else return false;
   }
 }
-
